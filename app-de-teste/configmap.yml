@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: ConfigMap
 metadata:
   name: simple-cm
   namespace: argocd
