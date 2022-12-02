@@ -4,8 +4,8 @@ data:
 kind: ConfigMap
 metadata:
   labels:
-    app.kubernetes.io/instance: app-teste
-    app.kubernetes.io/name: simple-cm
+    app.kubernetes.io/instance: argocd
+    app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
-  name: simple-cm
+  name: argocd-cm
   namespace: argocd
