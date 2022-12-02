@@ -1,11 +1,11 @@
----
 apiVersion: apps/v1
-kind: ConfigMap
-metadata:
-  name: simple-cm
-  namespace: argocd
-  labels:
-    app.kubernetes.io/name: simple-cm
-    app.kubernetes.io/part-of: argocd
 data:
   timeout.reconciliation: 240s
+kind: ConfigMap
+metadata:
+  labels:
+    app.kubernetes.io/instance: app-teste
+    app.kubernetes.io/name: simple-cm
+    app.kubernetes.io/part-of: argocd
+  name: simple-cm
+  namespace: argocd
