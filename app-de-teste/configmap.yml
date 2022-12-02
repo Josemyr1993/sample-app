@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-cm
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: simple-cm
+    app.kubernetes.io/part-of: argocd
+data:
+  timeout.reconciliation: 240s
